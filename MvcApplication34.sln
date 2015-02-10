@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication34", "MvcApplication34.csproj", "{5C569E87-21B9-4A36-9221-365D605E6D34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jasmine.tests", "..\..\..\Desktop\jasmineTestCases\Expenso.Tests\Jasmine.tests.csproj", "{A7FE854F-84EA-4A51-98E0-FCDF982CC9D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jasmine.tests", "..\Jasmine.Tests\Jasmine.tests.csproj", "{A7FE854F-84EA-4A51-98E0-FCDF982CC9D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
