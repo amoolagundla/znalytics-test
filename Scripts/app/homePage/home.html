@@ -1,0 +1,43 @@
+﻿<br/>
+<br/>
+
+<div id="todoapp" ng-controller="homeController">
+  
+    <label ng-model="msg">{{msg}}</label>
+   
+          <div id="todoapp">
+            <header>
+                <h1>Todos by Angular.js</h1><input type="button" value="get todos from web api" title="demostrating  web api skills" ng-click="getToDO()" /><input type="button" value="save todos using service & web api" title="demostrating  web api skills" ng-click="save()" /><br/>
+                <input id="new-todo" type="text" ng-model="todoText" size="30"
+                       placeholder="What needs to be done?"  />
+                <input type="date" ng-model="deadLine" style="line-height: 6px;">  
+                <input type="button" value="Add TODO" ng-click="addTodo()"/></header>
+
+            <section id="main" style="display: block;">
+                <div ng-show="isTodo()">
+                    <input id="toggle-all" type="checkbox" ng-model="markAll"
+                           ng-click="toggleMarkAll()" />
+                    <label for="toggle-all">Mark all as complete</label>
+                </div>
+
+                <ul id="todo-list" class="unstyled">
+                    <li ng-repeat="todo in todos" ng-dblclick="toggleEditMode()">
+                        <div class="view" ng-keyup="editTodo()">
+                            <input type="checkbox" ng-model="todo.done" />
+                              <span class="done-{{todo.done}}">{{todo.text}}</span><br/><span ng-class="caluclateDate(todo.deadline)  ? 'greenDeadLine' : 'redDeadLine'">DeadLine date : {{todo.deadline}}</span>
+                        </div>
+                       
+                    </li>
+                </ul>
+            </section>
+              <div class="todo-count">{{remaining()}} of {{todos.length}} remaining</div>
+              <a id="clear-completed" ng-click="clear()" ng-show="hasDone()">
+                  Clear completed tasks <span>{{(todos.length - remaining())}} {{itemText()}}</span>.
+              </a>
+           
+
+        </div>
+   
+    </div>
+
+</div>

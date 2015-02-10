@@ -1,0 +1,36 @@
+﻿#todoapp 
+{
+    margin-left: 24%;
+}
+#todoapp .form-control {
+display: inline-block;
+}
+#todoapp .add_button {
+margin: 10px 0px 10px 0px;
+}
+#todoapp .checkbox {
+margin-top: 20px;
+}
+#todoapp .completed_item {
+text-decoration: line-through;
+}
+ #todoapp h1 {
+display: inline-block;
+color: #292b33;
+}
+#todoapp body {
+background-color: #f6f6f6;
+}
+
+#todoapp .text_holder {
+display: block;
+max-width: 100%;
+word-wrap: break-word;
+}
+#todoapp #main {
+margin-top: 50px;
+background-color: #ffffff;
+border-radius: 5px;
+width: 50%;
+border: 1px solid #545454;
+}
